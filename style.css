@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body{
+    background-color: rgba(26, 11, 46, 1);
+    color: white;
+}
+/* navbar design */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+nav>h2{
+    width: 219px;
+    height: 32px;
+    padding-top: 3px;
+    padding-left: 120px;
+}
+.linear{
+    color: red;
+}
+nav>div{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+nav .subscribe-btn{
+    width: 120px;
+    border-radius: 10000px;
+    background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 6px;
+    text-align: center;
+    margin-right: 120px;
+}
+.hamburger{
+    margin-right: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsive styles */
+@media screen and (max-width:576px) {
+ .menu-container,
+ .subscribe-btn{
+    display: none;
+ }
+ .hamburger{
+    margin-right: 10px;
+    padding-top: 10px;
+    display: inline;
+} 
+}
