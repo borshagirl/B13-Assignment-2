@@ -47,6 +47,33 @@ nav .subscribe-btn{
     padding-top: 10px;
     display: none;
 }
+/* banner section */
+.hero-banner{
+    border: 2px solid red; 
+    width: 100%;
+}
+
+/* about feature section */
+.about-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    /* border: 2px solid green; */
+    width: 1200px;
+    padding: 50px 200px 120px 200px;
+
+
+
+}
+.feature-content{
+     justify-content: center;
+     text-align: center;  
+}
+.feature-rating{  
+    display: flex;
+    justify-content: space-between;   
+}
+
 
 
 
@@ -61,11 +88,29 @@ nav .subscribe-btn{
 @media screen and (max-width:576px) {
  .menu-container,
  .subscribe-btn{
-    display: none;
+ display: none;
  }
  .hamburger{
     margin-right: 10px;
     padding-top: 10px;
     display: inline;
-} 
+}
+.about-feature{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    border: 2px solid green;
+    width: 100%;
+    
+}
+.feature-content{
+     justify-content: center;
+     text-align: center;
+}
+.feature-rating{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 40px;
+    margin-left: -60px; 
+}
 }
